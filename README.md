@@ -1,10 +1,18 @@
-# CYCLES
-Similarité sur le graphe de cycles des molécules
-
-- Créer un dossier resultats à coté du dossier CYCLES
-- La base de données de molecules utilisée est CHEBI, il faut télécharger le fichier CHebi_Lite.pdf(https://www.dropbox.com/s/4qqrg5jxi8o727w/ChEBI_lite.sdf?dl=0) et le mettre dans le dossier.
+# GENERER N MOLECULES DE CHEBU AYANT AU MOINS M CYCLES DANS GC
 
 
-Il faut lancer le script ./similarite_olivier.sh
+En entrée il faut le fichier /stats/tailles_cycles.data du repertoire distribution_GC 
+
+Dans le makefile on precise la valeur de N et M 
+
+run : molecules
+  ./molecules N M
+  
+  
+Les N molecules sont stockés dans le fichier : molecules.data
+
+
+La distribution de l'echantillon : distribution_echantillon.pdf
+
 
 Version à jour
